@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/albumImage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Album Title"
+            android:layout_toRightOf="@id/albumImage"
+            style="@style/Base.TextAppearance.AppCompat.Title"
+            android:textSize="18sp"
+            android:textColor="#808080"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:id="@+id/albumTitle"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/albumTitle"
+            android:textColor="#808080"
+            android:text="Bruno Mars"
+            android:layout_toRightOf="@+id/albumImage"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/albumArtist"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</android.support.v7.widget.CardView>
